@@ -1,4 +1,4 @@
-# Laravel-doraRPC-Client
+# laravel-dora-rpc-Client
 
 DoraRPC Client for Laravel5 on [xcl3721/Dora-RPC](https://github.com/xcl3721/Dora-RPC).
 
