@@ -1,6 +1,7 @@
 {
   "name": "zhiyanglee/laravel-dorarpc",
   "description": "Dora RPC Client for Laravel",
+  "minimum-stability": "stable",
   "keywords": [
     "client",
     "RPC",
