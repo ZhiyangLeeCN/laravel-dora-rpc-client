@@ -1,5 +1,5 @@
 {
-  "name": "zhiyanglee/laravel-DoraRpcClient",
+  "name": "zhiyanglee/laravel-dorarpc",
   "description": "Dora RPC Client for Laravel",
   "keywords": [
     "client",
