@@ -7,11 +7,10 @@
     "Dora-RPC",
     "Laravel"
   ],
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
-      "name": "zhiYangLee",
+      "name": "zhiyanglee",
       "email": "zhiyanglee@foxmail.com"
     }
   ],
@@ -23,12 +22,6 @@
   "autoload": {
     "psr-4": {
       "ZhiyangLee\\LaravelDoraRpc\\": "src/"
-    }
-  },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.phpcomposer.com"
     }
   }
 }
