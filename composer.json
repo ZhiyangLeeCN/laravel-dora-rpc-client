@@ -1,0 +1,34 @@
+{
+  "name": "zhiyanglee/laravel-doraRPC-Client",
+  "description": "Dora RPC Client for Laravel",
+  "keywords": [
+    "client",
+    "RPC",
+    "Dora-RPC",
+    "Laravel"
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhiYangLee",
+      "email": "zhiyanglee@foxmail.com"
+    }
+  ],
+  "require": {
+    "xcl3721/dora-rpc": ">=0.3.4",
+    "ext-swoole" : "*",
+    "illuminate/support": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZhiyangLee\\LaravelDoraRpc\\": "src/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
