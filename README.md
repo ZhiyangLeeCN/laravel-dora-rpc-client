@@ -5,7 +5,7 @@ DoraRPC Client for Laravel5 on [xcl3721/Dora-RPC](https://github.com/xcl3721/Dor
 ## Install
 
 ```shell
-composer require zhiyanglee/laravel-dorarpc
+composer require zhiyanglee/laravel-dorarpc:master-dev
 php artisan vendor:publish
 ```
 ## Configure
