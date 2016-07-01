@@ -6,11 +6,10 @@ DoraRPC Client for Laravel5 on [xcl3721/Dora-RPC](https://github.com/xcl3721/Dor
 
 ```shell
 composer require zhiyanglee/laravel-dorarpc:master-dev
-php artisan vendor:publish
 ```
 ## Configure
 
-`config/dorarpc.php`
+`config/doraclient.php`
 
 ```php
 return [
@@ -47,20 +46,16 @@ Add the following line to the section `providers` of `config/app.php`:
 ],
 ```
 
-as optional, you can use facade:
+run artisan:
 
 ```php
-
-'aliases' => [
-    //...
-    'DoraRpcClient' => ZhiyangLee\Facades\DoraRpcClient,
-],
+php artisan vendor:publish
 ```
 
 ## Usage
 
 ```php
-use ZhiyangLee\Facades\DoraRpcClient;
+use ZhiyangLee\LaravelDoraRpc\Facades\DoraRpcClient;
 
 //single && sync
 $ret = DoraRpcClient::singleAPI("/module_a/abc" . 1, array("mark" => 234, "foo" => 1), \DoraRPC\DoraConst::SW_MODE_WAITRESULT, 1);
@@ -74,7 +69,7 @@ var_dump("single async", $ret);
 $ret = DoraRpcClient::singleAPI("/module_c/abd" . 3, array("yes" => 233, "foo" => 3), \DoraRPC\DoraConst::SW_MODE_ASYNCRESULT, 1);
 var_dump("single async result", $ret);
 
-//---------multi
+//---------multi---------
 
 //multi && sync
 $data = array(

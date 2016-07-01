@@ -27,7 +27,7 @@ class DoraRpcClientServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/dorarpc.php'  =>  config_path('dorarpc.php')
+            __DIR__ . '/../config/doraclient.php' =>  config_path('doraclient.php')
         ]);
     }
 
@@ -40,8 +40,8 @@ class DoraRpcClientServiceProvider extends ServiceProvider
     {
         $this->app->singleton('DoraRPC\Client', function($app){
 
-            $clientConfig = $app['config']['dorarpc.clientConfig'];
-            $clientMode = $app['config']['dorarpc.clientMode'];
+            $clientConfig = $app['config']['doraclient.clientConfig'];
+            $clientMode = $app['config']['doraclient.clientMode'];
 
             $doraRpc = new Client($clientConfig);
             $doraRpc->changeMode($clientMode);
