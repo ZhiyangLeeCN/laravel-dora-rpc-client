@@ -1,4 +1,4 @@
-<?php namespace ZhiyangLee\LaravelDoraRpc\Facades;
+<?php namespace ZhiyangLee\LaravelDoraRpc\Client\Facades;
 
 /**
  * User: zhiyanglee

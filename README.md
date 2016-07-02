@@ -5,7 +5,7 @@ DoraRPC Client for Laravel5 on [xcl3721/Dora-RPC](https://github.com/xcl3721/Dor
 ## Install
 
 ```shell
-composer require zhiyanglee/laravel-dorarpc:master-dev
+composer require zhiyanglee/laravel-dorarpc-client:master-dev
 ```
 ## Configure
 
@@ -55,7 +55,7 @@ php artisan vendor:publish
 ## Usage
 
 ```php
-use ZhiyangLee\LaravelDoraRpc\Facades\DoraRpcClient;
+use ZhiyangLee\LaravelDoraRpc\Client\Facades\DoraRpcClient;
 
 //single && sync
 $ret = DoraRpcClient::singleAPI("/module_a/abc" . 1, array("mark" => 234, "foo" => 1), \DoraRPC\DoraConst::SW_MODE_WAITRESULT, 1);

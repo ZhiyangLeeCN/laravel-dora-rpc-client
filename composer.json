@@ -1,5 +1,5 @@
 {
-  "name": "zhiyanglee/laravel-dorarpc",
+  "name": "zhiyanglee/laravel-dorarpc-client",
   "description": "Dora RPC Client for Laravel",
   "minimum-stability": "stable",
   "keywords": [
@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ZhiyangLee\\LaravelDoraRpc\\": "src/"
+      "ZhiyangLee\\LaravelDoraRpc\\Client\\": "src/"
     }
   }
 }
