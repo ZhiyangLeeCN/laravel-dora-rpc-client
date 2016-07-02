@@ -42,7 +42,7 @@ Add the following line to the section `providers` of `config/app.php`:
 ```php
 'providers' => [
     //...
-    ZhiyangLee\LaravelDoraRpc\DoraRpcClientServiceProvider,
+    ZhiyangLee\LaravelDoraRpc\Client\DoraRpcClientServiceProvider,
 ],
 ```
 
